@@ -4,3 +4,26 @@
     box-sizing: border-box;
 
 }
+ul {
+    list-style-type: none;
+
+}
+#root {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input_todo {
+    display: block;
+    padding: 20px;
+}
+#to_do_list {
+    display: block;
+
+}
+#to_do_list li {
+    padding: 10px;
+}

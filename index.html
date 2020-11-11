@@ -9,12 +9,15 @@
     </head>
     <body>
         <div id="root">
-            <input type="text" @keyUp.13="addElement" v-model="toDoTask" name="" value="">
-            <button @click="addElement" type="button" name="button">
-                Aggiungi
-            </button>
-            <ul>
+            <form id="input_todo" >
+                <input type="text" @keyUp.13="addElement" v-model="toDoTask" name="" placeholder="Aggiungi incarico in lista">
+                <button @click="addElement" type="button" name="button">
+                    Aggiungi
+                </button>
+            </form>
+            <ul id="to_do_list">
                 <li v-for="(task, index) in toDoList" >
+                    <i class="fas fa-check-square"></i>
                     <span @click="deleteElement(index)">
                         {{task}}
                     </span>

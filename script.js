@@ -14,7 +14,13 @@ var app = new Vue({
 },
   methods: {
     addElement() {
-        this.toDoList.push(this.toDoTask)
+        if (this.toDoTask.length > 0) {
+            this.toDoList.push(this.toDoTask)
+        }
+        else {
+            alert('scrivi qualcosa')
+        }
+
     },
 
     deleteElement(index) {
@@ -23,9 +29,3 @@ var app = new Vue({
   }
 
 })
-
-
-
-// prova(){
-//     alert('Il click funziona')
-// }
