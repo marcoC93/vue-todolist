@@ -9,16 +9,19 @@ var app = new Vue({
         'assemblare PC',
         'andare dal fornitore'
     ],
-    toDoTask: ''
+    toDoTask: '',
+
 },
   methods: {
     addElement() {
         this.toDoList.push(this.toDoTask)
-      }
-    // deleteElement() {
-    // // this.$delete(this.task,this.index)
-    // }
+    }
+
+    deleteElement() {
+    alert('cliccato')
+    }
   }
+
 })
 
 
