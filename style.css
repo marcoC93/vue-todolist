@@ -22,8 +22,41 @@ ul {
 }
 #to_do_list {
     display: block;
+    padding: 5px;
+    box-shadow: 5px 10px #888 ;
+    border: 1px solid black ;
+    border-radius: 4px;
+
+}
+#to_do_list h2 {
+    display: block;
+    padding: 10px;
+    text-align: center;
 
 }
 #to_do_list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s ;
+
+
+}
+#to_do_list li:hover {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #888;
+    color: #ddd ;
+}
+form button {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+form button:hover {
+    background-color: #888;
+    color: #ddd ;
+}
+.trash {
     padding: 10px;
 }
