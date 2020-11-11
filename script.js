@@ -24,7 +24,7 @@ var app = new Vue({
     },
 
     deleteElement(index) {
-        console.log(index);
+        this.toDoList.splice(index,1)
     }
   }
 
