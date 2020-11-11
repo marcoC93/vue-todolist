@@ -9,13 +9,15 @@
     </head>
     <body>
         <div id="root">
-            <input type="text" v-model="toDoTask" name="" value="">
+            <input type="text" @keyUp.13="addElement" v-model="toDoTask" name="" value="">
             <button @click="addElement" type="button" name="button">
                 Aggiungi
             </button>
             <ul>
-                <li v-for="task in toDoList" >
-                    <span>{{task}} </span>
+                <li v-for="(task, index) in toDoList" >
+                    <span @click="deleteElement(index)">
+                        {{task}}
+                    </span>
                 </li>
             </ul>
             <div class="">

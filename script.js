@@ -15,10 +15,10 @@ var app = new Vue({
   methods: {
     addElement() {
         this.toDoList.push(this.toDoTask)
-    }
+    },
 
-    deleteElement() {
-    alert('cliccato')
+    deleteElement(index) {
+        console.log(index);
     }
   }
 
